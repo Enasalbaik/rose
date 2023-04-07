@@ -262,19 +262,18 @@ position: relative;
 .navbar-nav .nav-link:hover{
     color: var(--Crimson) !important;
     background-color: transparent !important;
-    margin-left: 5px;
 }
-
+.navbar-nav .nav-link:hover + {
+    fill: var(--Crimson);
+}
 header nav, .navbar-collapse{
     background-color: transparent !important;
 }
 .main-side-nav{
     padding: 0px !important;
-    overflow: hidden;
 }
 .content-db{
     padding: 80px 40px;
-    overflow: hidden;
 }
 .inner-content{
     padding: 30px 20px;
@@ -639,8 +638,8 @@ legend{
 }
 
 /*client-info project-info pages*/
-.project-info, .contactdata{
-    margin-top: 40px !important;
+.project-info{
+    margin-top: 40px;
     justify-content: center;
 }
 .project-info thead th{
@@ -1057,21 +1056,8 @@ legend{
     text-transform: capitalize;
 }
 .alert-img{
-    margin: auto !important;
-    height: auto !important;
-    border: 0px !important;
+    margin: auto;
     display: block;
-
-}
-.swal2-container{
-    z-index: 9999999999999999999153 !important;
-}
-.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel{
-    background-color: transparent !important;
-}
-.swal2-actions:not(.swal2-loading) .swal2-styled:hover, .swal2-actions:not(.swal2-loading) .swal2-styled:active{
- background-color: transparent !important;
- background-image: none !important;
 }
 .open ul.dropdown-menu {
     display: block;
@@ -1671,7 +1657,7 @@ input:active, input.active, input:not(input[type=checkbox]):focus, input:visited
 #preloader{
     height: 100vh;
     width: 100%;
-    background: var(--white);
+    background: var(--white) url(../images/preloader.svg) no-repeat center center;
     position: fixed;
     z-index: 100;
 }
@@ -1680,7 +1666,6 @@ input:active, input.active, input:not(input[type=checkbox]):focus, input:visited
     background: var(--white);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
-    margin-bottom: 40px;
 }
 .search input{
     border: 2px solid transparent !important;
@@ -1726,7 +1711,7 @@ input.date-range, .sort .dropdown{
     content: "";
     width: 14px;
     height: 8px;
-    right: 15px;
+    right: 35px;
     top: 18px!important;
     margin: 0px 3px;
     background-image: url(../images/arrow.svg);
@@ -1984,7 +1969,7 @@ input.date-range, .sort .dropdown{
 }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight{
-    height: auto;
+    height: 40px;
     border: 1px solid #F5F5F5 !important;
     background: #ffffff !important;
     padding: 10px 20px;
@@ -2368,10 +2353,6 @@ border: 0;
 }
 .submit.bgdark:hover{
     background-color: var(--Crimson) !important;
-    border-color: var(--Crimson) !important;
-}
-.swal2-styled.swal2-confirm:focus{
-    box-shadow: none !important;
 }
 th{
     font-family: 'Lato';
@@ -2632,9 +2613,6 @@ vertical-align: middle;
 }
 
 @media(max-width:767px){
-    .print-btn{
-        display: none;
-    }
     .bankinfo .content-db{
         padding: 80px 40px;
     }
@@ -2648,9 +2626,6 @@ vertical-align: middle;
     .mesheader{
         padding: 20px;
         text-align: center;
-    }
-    #preloader svg{
-        max-width: 330px;
     }
 }
 
@@ -2710,147 +2685,3 @@ vertical-align: middle;
 .padding-left-0{
     padding-left: 0px;
 }
-#preloader svg{
-    display: block;
-    margin: auto;
-    justify-content: center;
-    position: relative;
-    top: 35%;
-    max-width: 330px;
-}
-table.dataTable th {
-    white-space: nowrap;
-    background-color: #F5F5F5 !important;
-    border-bottom: 1px solid transparent !important;
-
-}
-table.dataTable tr.group td{
-    background-color: #C8C8C8 !important;
-    text-align: left !important;
-    letter-spacing: -0.03em;
-    text-transform: capitalize;
-    color: #626262;
-}
-.add-tabel-bnt{
-    width: 20px;
-    height: 20px;
-    color: #A1A1A5;
-    font-size: 20px;
-}
-.add-tabel-bnt:hover{
-    color: #A1A1A5;
-}
-table.dataTable, .mart40{
-    margin-bottom: 40px !important;
-}
-
-
-
-
-
-.table.contact-t>th{
-    
-    text-align: left;
-}
-
-
-
-@media all {
-	.page-break	{ display: none; }
-}
-@media print {
-    
-:root{
-    --Crimson: #B5121B;
-    --Crimson-background:#170203;
-    --Dark-gray: #626262;
-    --dark-blue: #333333;
-    --light-gray: #C6B1B2;
-    --bg-light-gray: #F5F5F5;
-    --mid-grey: #A1A1A5;
-    --background: #F5F5F5;
-    --white: #ffffff;
-    --input-color: #C8C8C8;
-}
-    body { font-size: 12pt;
-        -webkit-print-color-adjust: exact; }
-    .main-side-nav, header, .caption, .search-input, .btn-print, .hide-print,.new-btn, .bg-transparent, .addnew, .capt 
-    {display: none !important;}
-    .col-md-10 {
-        width: 100% !important;
-    }
-    .ph-ac-t td, .ph-ac-t thead th {
-        font-style: normal;
-        font-weight: 400 !important;
-        font-size: 11px !important;
-        line-height: 14px !important;
-        align-items: center;
-        letter-spacing: -0.03em;
-        color: #626262 !important;
-        padding: 13px 6px !important;
-    }
-    .status-account {
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        margin: auto;
-    }
-    .add-new-budg-btn {
-        display: none;
-    }
-    .accordion-item .accordion-button {
-        cursor: pointer;
-        padding: 7px 27px !important;
-        height: 56px;
-        background: #B5121B;
-        border-width: 1px 1px 0px 1px;
-        border-style: solid;
-        border-color: #B5121B;
-        border-radius: 8px 8px 0px 0px;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 41px;
-        color: #ffffff;
-        position: relative;
-    }
-    .project-info td .y-n {
-        width: 80px;
-        height: 24px;
-        margin: auto;
-        border-radius: 4px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 21px;
-        align-items: center;
-        text-align: center;
-        letter-spacing: -0.03em;
-        color: #FFFFFF;
-    }
-    
-    .yes {
-        background: #99D36B;
-    }
-    .no {
-        background: #B5121B;
-    }
-    .border-0 {
-        border: 0!important;
-    }
-    .table>:not(caption)>*>* {
-        padding: 0.5rem 0.5rem;
-        background-color: var(--bs-table-bg);
-        border-bottom-width: 1px;
-        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-    }
-    .color {
-        color: var(--Crimson)!important;
-    }
-    thead th:last-child, td:last-child{
-        display: none !important;
-    }
-    .page-break	{ display: block; page-break-before: always; }
-    .collapse:not(.show) {
-        display: block;
-    }
-  }

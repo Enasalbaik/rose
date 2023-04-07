@@ -33,7 +33,7 @@
                            
                             <li class="active">
                                
-                                <a href="project-info.html" class="nav-link active" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Project information">
+                                <a href="index.html" class="nav-link active" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Project information">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.7797 19.3399H3.21973C2.80973 19.3399 2.46973 18.9999 2.46973 18.5899V13.6499C2.46973 8.42993 6.71973 4.17993 11.9397 4.17993H12.0597C17.2797 4.17993 21.5297 8.42993 21.5297 13.6499V18.5899C21.5297 18.9999 21.1897 19.3399 20.7797 19.3399ZM3.96973 17.8399H20.0297V13.6499C20.0297 9.24993 16.4497 5.67993 12.0597 5.67993H11.9397C7.53973 5.67993 3.96973 9.25993 3.96973 13.6499V17.8399V17.8399Z" fill="#C6B1B2"/>
                                         <path d="M12 5.67999C11.59 5.67999 11.25 5.33999 11.25 4.92999V2C11.25 1.59 11.59 1.25 12 1.25C12.41 1.25 12.75 1.59 12.75 2V4.92999C12.75 5.33999 12.41 5.67999 12 5.67999Z" fill="#C6B1B2"/>
@@ -241,7 +241,6 @@
                                 
                             </div>
                         </div>
-                       
                         <div class="row project-info ac-su">
                             <div class="col-lg-6 ">
                                 <div class="row t-p-b">
@@ -270,11 +269,10 @@
                                                         <img src="assets/images/grand-total-img.png" alt="">
                                                   
                                         </div>
-                                        <div class="page-break"></div>
+                                        
                                     </div>
                                 </div>
                             </div>
-                           
                             <div class="col-lg-5 offset-lg-1">
                                 <div class="table-responsive awarded">
                                     <table class="table ">
@@ -336,7 +334,6 @@
                     </div>
                   
                 </div>
-                <div class="page-break"></div>
                 <div class="container-fluid content-db" id="Account-Details">
                     <div class="inner-content">
                         <div class="row">
@@ -473,7 +470,6 @@
                     </div>
                   
                 </div>
-                <div class="page-break"></div>
                 <div class="container-fluid content-db" id="Client-Payment">
                     <div class="inner-content">
                         <div class="row">
@@ -567,7 +563,6 @@
                     </div>
                   
                 </div>
-                <div class="page-break"></div>
                 <div class="container-fluid content-db mb-5" id="Client-Details">
                     <div class="inner-content">
                         <div class="row">
@@ -918,16 +913,6 @@
 $(document).ready(function() {
     $('.sortby').select2();
 });
-</script>
-<script>
-    function printDiv() {
-        var divToPrint = document.getElementById('Account-Summary');
-        newWin = window.open('<link rel="stylesheet" type="text/css" href="assets/css/print-style.css" />','width=920,height=750,top=100,left=100');
-        newWin.document.write('<html><title>Account Summary</title><head><style>ph-ac-t td.pro-bud{color: #B5121B !important;} .page-break{ display: block; page-break-before: always; }.caption, .hide-print, .add-new-budg-btn, .print-btn{display:none;}.project-info td .y-n {width: 80px;height: 24px;margin: auto;border-radius: 4px;font-weight: 500;font-size: 16px;line-height: 21px;align-items: center;text-align: center;letter-spacing: -0.03em;color: #FFFFFF;}.yes {background: #99D36B;}.no {background: #B5121B;}.border-0 {border: 0!important;}.table>:not(caption)>*>* {padding: 0.5rem 0.5rem;background-color: var(--bs-table-bg);border-bottom-width: 1px;box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);}.color {color: var(--Crimson)!important;.accordion-item .accordion-button{background: #B5121B;}}</style>' + divToPrint.outerHTML) +'</html>';
-        newWin.print();
-        setTimeout(function(){mywindow.print();},1000);
-        newWin.close();
-   }
 </script>
 </body>
 </html>
